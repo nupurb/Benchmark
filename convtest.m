@@ -1,5 +1,5 @@
 % Set parameters
-numTrials = 100;
+numTrials = 50;
 
 % make a random matrix A, whose width depends on the downsampling rate
 downsampling = 5;
@@ -69,4 +69,5 @@ save('BSizes.mat', 'BSizes');
 save('averageTimes.mat', 'averageTimes');
 save('variances.mat', 'variances');
 
-
+% save the plot
+saveas(gcf, 'convtest_50trials_fullA.png');
